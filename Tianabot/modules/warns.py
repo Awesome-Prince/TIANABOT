@@ -122,6 +122,9 @@ def warn(
                 [
                     InlineKeyboardButton(
                         "🔘 Remove warn", callback_data="rm_warn({})".format(user.id)
+                    ),
+                    InlineKeyboardButton(
+                        "🆑 Chat Rules", url="https://t.me/PATRICIA_ROBOT?start={}".format(chat.id)
                     )
                 ]
             ]
@@ -129,7 +132,7 @@ def warn(
 
         reply = (
             f"<code>❕</code><b>Warn Event</b>\n"
-            f"<code> </code><b>•  User:</b> {mention_html(user.id, user.first_name)}\n"
+            f"<code> </code><b>• Stupid User:</b> {mention_html(user.id, user.first_name)}\n"
             f"<code> </code><b>•  Count:</b> {num_warns}/{limit}"
         )
         if reason:
