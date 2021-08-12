@@ -5,7 +5,7 @@ from motor import motor_asyncio
 from Tianabot import MONGO_DB_URI 
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
-from Tianabot.helper_extra.conf import get_int_key, get_str_key
+from Tianabot.conf import get_int_key, get_str_key
 
 
 MONGO_PORT = get_int_key("27017")
