@@ -123,6 +123,8 @@ def warn(
                     InlineKeyboardButton(
                         "🔘 Remove warn", callback_data="rm_warn({})".format(user.id)
                     ),
+                ],
+                [
                     InlineKeyboardButton(
                         "🆑 Chat Rules", url="https://t.me/PATRICIA_ROBOT?start={}".format(chat.id)
                     )
