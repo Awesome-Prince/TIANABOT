@@ -96,7 +96,7 @@ buttons = [
     ],
    [
         InlineKeyboardButton(
-            text="Sᴜᴩᴩᴏʀᴛ⚠️", url=f"http://t.me/{CHAT_GROUP}"),
+            text="Sᴜᴩᴩᴏʀᴛ⚠️", url=f"http://t.me/{SUPPORT_CHAT}"),
         InlineKeyboardButton(
             text="Uᴩᴅᴀᴛᴇs🔔", url="http://t.me/PATRICIA_UPDATES")
    ],
@@ -386,10 +386,10 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ],
                  [
                      InlineKeyboardButton(text="Cʀᴇᴅɪᴛs💱", url="t.me/PATRICIA_CREDITS"),
-                     InlineKeyboardButton(text="Gʙᴀɴ-Lᴏɢs", url="t.me/PATRICIA_LOGS"),
+                     InlineKeyboardButton(text="Gʙᴀɴ-Lᴏɢs⏱️", url="t.me/PATRICIA_LOGS"),
                  ],
                  [                     
-                     InlineKeyboardButton(text="Back", callback_data="masha_back"),
+                     InlineKeyboardButton(text="【𝐁𝐀𝐂𝐊】", callback_data="masha_back"),
                  ],
                 ]
             ),
@@ -463,7 +463,10 @@ def get_help(update: Update, context: CallbackContext):
                         InlineKeyboardButton(
                             text="Help",
                             url="t.me/{}?start=help".format(context.bot.username),
-                        )
+                        ),
+                        InlineKeyboardButton(
+                            text="Support",
+                            url="t.me/{SUPPORT_CHAT}),
                     ]
                 ]
             ),
