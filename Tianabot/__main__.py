@@ -81,7 +81,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-TIANA_IMG2,`Heya` 🤗 `I am` **PATRICIA** `your group super bot`
+TIANA_IMG,`Heya` 🤗 `I am` **PATRICIA** `your group super bot`
 `I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
 """
 
@@ -103,8 +103,7 @@ buttons = [
    
 ]
 
-TIANA_IMG = f"{ALIVE_PIC}",
-TIANA_IMG2 = f"{START_PIC}",
+TIANA_IMG = f"{ALIVE_PIC}"
 
 HELP_STRINGS = f"""
 Hey There! My Name is **PATRICIA**
