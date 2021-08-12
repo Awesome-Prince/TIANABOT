@@ -638,7 +638,9 @@ def get_settings(update: Update, context: CallbackContext):
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
-                            )
+                            InlineKeyboardButton(
+                                text="Support",
+                                url="t.me/{SUPPORT_CHAT}"),
                         ]
                     ]
                 ),
