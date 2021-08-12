@@ -80,42 +80,33 @@ def get_readable_time(seconds: int) -> str:
 
 
 
-PM_START_TEXT = f"""Hello, My Name is {BOT_NAME}
-
-Hey , I am a Group Manager,
-Made specially for Managing Groups.
-
-Click /help or use button below to find out more about how to use me to my full potential."""
+PM_START_TEXT = f"""
+`Heya` 🤗 `I am` **PATRICIA** `your group super bot`
+`I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
+"""
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕️", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
+            text="➕️ Sᴜᴍᴍᴏɴ Mᴇ ➕️", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="📱𝐈𝐍𝐅𝐎", callback_data="masha_"),
-        InlineKeyboardButton(text="⚜️𝐇𝐄𝐋𝐏", callback_data="help_back"),
+        InlineKeyboardButton(text="Dᴇᴛᴀɪʟs🗞️", callback_data="masha_"),
+        InlineKeyboardButton(text="⚜Fᴜɴᴄᴛɪᴏɴ📚", callback_data="help_back"),
     ],
    [
         InlineKeyboardButton(
-            text="🎵 𝐂𝐇𝐀𝐓𝐓𝐈𝐍𝐆 𝐆𝐑𝐎𝐔𝐏 🎧", url=f"http://t.me/{CHAT_GROUP}")
+            text="Sᴜᴩᴩᴏʀᴛ⚠️", url=f"http://t.me/{CHAT_GROUP}"),
+        InlineKeyboardButton(
+            text="Uᴩᴅᴀᴛᴇs🔔", url="http://t.me/PATRICIA_UPDATES")
    ],
-   [
-        InlineKeyboardButton(
-            text="✨ 𝐎𝐖𝐍𝐄𝐑 ✨", url=f"http://t.me/{OWNER_USERNAME}"),
-        InlineKeyboardButton(
-            text="⚜️ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⚜️", url=f"https://t.me/{BOT_CHANNEL}"),
-    ],
-    [  
-        InlineKeyboardButton(text="👥 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 👥", url=f"https://t.me/{SUPPORT_CHAT}"),
-    ], 
-    
+   
 ]
 
 TIANA_IMG = f"{ALIVE_PIC}"
 
 HELP_STRINGS = f"""
-Hey There! My Name is {BOT_NAME}
+Hey There! My Name is **PATRICIA**
 
 • Main commands available:
  • /help: PM's you this message.
@@ -376,23 +367,30 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=f""" ℹ️ I'm {BOT_NAME}, a powerful group management bot built to help you manage your group easily. This Bots Created By PRINCE
-                 ❍ I can restrict users.
-                 ❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 ❍ I have an advanced anti-flood system.
-                 ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 ❍ I check for admins' permissions before executing any command and more stuffs
-                 \n_Tiana's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://github.com/prince301102/tiana-2.0).
-                 If you have any question about masha, let us know at [SUPPORT CHAT](https://t.me/{SUPPORT_CHAT}).""",
+            text=f""" **PATRICIA** it's online since 29 March 2021 and it's constantly updated!
+            \n**Bot Admins**  
+            \n• @PIROXPOWER, bot creator and main developer.
+            \n• The Doctor, server manager and developer.
+            \n• Manuel 5, developer.
+            \n**Support**
+            \n• [Click here](t.me/PATRICIA_SUPPORT) to consult the updated list of Official Supporters of the bot.
+            \n• Thanks to all our **donors** for supporting server and development expenses and all those who have reported bugs or suggested new features.
+            \n• We also thank **all the groups** who rely on our Bot for this service, we hope you will always like it: we are constantly working to improve it!""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="masha_back")
-                 ]
+                     InlineKeyboardButton(text="Sᴜᴩᴩᴏʀᴛ⚠️", url="t.me/PATRICIA_SUPPORT"),
+                     InlineKeyboardButton(text="Uᴩᴅᴀᴛᴇs🗞️", url="t.me/PATRICIA_UPDATES"),
+                 ],
+                 [
+                     InlineKeyboardButton(text="Cʀᴇᴅɪᴛs💱", url="t.me/PATRICIA_CREDITS"),
+                     InlineKeyboardButton(text="Gʙᴀɴ-Lᴏɢs", url="t.me/PATRICIA_LOGS"),
+                 ],
+                 [                     
+                     InlineKeyboardButton(text="Back", callback_data="masha_back"),
+                 ],
                 ]
             ),
         )
@@ -411,8 +409,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *TIANA BOT*
-                 \nHere is the [Source Code](https://GitHub.com/prince301102/tiana-2.0) .""",
+            text=""" Hi..🤗 I'm *PATRICIA*
+                 \nHere is the [Source Code](t.me/piroXpower) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
