@@ -97,6 +97,7 @@ if ENV:
     BOT_NAME = os.environ.get("BOT_NAME", None)
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
     ALIVE_PIC = os.environ.get("ALIVE_PIC", None)
+    START_PIC = os.environ.get("START_PIC", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
