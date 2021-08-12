@@ -466,7 +466,7 @@ def get_help(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="Support",
-                            url="t.me/{SUPPORT_CHAT}),
+                            url=f"t.me/{SUPPORT_CHAT}"),
                     ]
                 ]
             ),
