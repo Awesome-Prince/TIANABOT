@@ -6,5 +6,5 @@ __help__ = """
  ❍ /saavn <song name> : Download songs you want quickly via saavn.
  ❍ /video <video name> : Download videos you want quickly.
  ❍ /vsong <song name> : Download video songs.
- ❍ /vchelp : Do this to open VC help module."""
+ ❍ /vcplayer : Do this to open VC help module."""
 
