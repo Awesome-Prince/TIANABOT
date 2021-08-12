@@ -2,6 +2,7 @@ future
 emoji
 lxml
 wget
+nekos.py
 gtts
 beautifulsoup4
 requests==2.20.0
